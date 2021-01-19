@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "act", "act\act.csproj", "{F72B59DF-C0A5-4510-BD34-E0520DEEA867}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "act.Domain", "act.Domain\act.Domain.csproj", "{F324C0A2-B681-4CE9-946B-858C9E2E2EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{F72B59DF-C0A5-4510-BD34-E0520DEEA867}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F72B59DF-C0A5-4510-BD34-E0520DEEA867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F72B59DF-C0A5-4510-BD34-E0520DEEA867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F324C0A2-B681-4CE9-946B-858C9E2E2EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F324C0A2-B681-4CE9-946B-858C9E2E2EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F324C0A2-B681-4CE9-946B-858C9E2E2EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F324C0A2-B681-4CE9-946B-858C9E2E2EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
