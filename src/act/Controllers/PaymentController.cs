@@ -21,19 +21,21 @@ namespace act.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] int page = 1, int size = 20)
+        public async Task<IActionResult> Get()
         {
             var query = _appDbContext.Transactions.AsNoTracking()
                 .Include(x => x.Customer)
+                .OrderByDescending(x => x.Id)
                 .Select(x => new TransactionModel()
                 {
+                    Id = x.Id,
                     Customer = new CustomerModel() {Name = x.Customer.Name, Email = x.Customer.Email},
                     Amount = x.Amount,
                     Currency = x.Currency,
                     PaymentAt = x.CreateAt
                 });
 
-            var result = await query.Skip((page-1) * size).Take(size).ToListAsync();
+            var result = await query.ToListAsync();
             return Ok(new ApiResponse<List<TransactionModel>>(result));
         }
 
